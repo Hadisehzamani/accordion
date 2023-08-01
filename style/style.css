@@ -39,11 +39,21 @@
 
 .panel {
     width: 100%;
-    padding: 10px 10px;
-    display: none;
     overflow: hidden;
     transition: 0.5s;
+    height: 0;
 }
 
+.panel.display-block {
+    height: auto;
+    padding: 10px 10px;
+}
 
+.panel p {
+    display: none;
+}
+
+.panel.display-block p {
+    display: block;
+}
 
